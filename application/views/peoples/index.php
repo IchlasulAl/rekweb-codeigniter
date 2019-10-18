@@ -2,11 +2,11 @@
     <h3 class="mt-3">List of Peoples</h3>
     <div class="row">
         <div class="col-md-5">
-            <form action="<?= base_url('peoples'); ?>">
+            <form action="<?= base_url('peoples'); ?>" method="post">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Keyword...">
+                    <input type="text" class="form-control" placeholder="Search Keyword..." name="keyword" autocomplete="off" autofocus>
                     <div class="input-group-append">
-                        <input type="submit" class="btn btn-primary" name="submit" autocomplete="off" autofocus>
+                        <input type="submit" class="btn btn-primary" name="submit">
                     </div>
                 </div>
             </form>
@@ -18,8 +18,7 @@
 
     <div class="row">
         <div class="col-md-10">
-
-
+            <h6>Result : <?= $total_rows ?></h6>
             <table class="table">
                 <thead>
                     <tr>
@@ -30,6 +29,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php if (empty($peoples)) : ?>
+                        <tr>
+                            <td colspan="4">
+                                <div class="alert alert-danger" role="alert">
+                                    Data not found
+                                </div>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
                     <?php foreach ($peoples as $people) : ?>
                         <tr>
                             <td><?= ++$start ?></td>
