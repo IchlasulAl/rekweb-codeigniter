@@ -31,7 +31,7 @@
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Teknik Industri">Teknik Industri</option>
                                 <option value="Teknik Mesin">Teknik Mesin</option>
-                                <option value="Teknik lingkungan">Teknik lingkungan</option>
+                                <option value="Teknik Lingkungan">Teknik Lingkungan</option>
                                 <option value="Teknologi Pangan ">Teknologi Pangan </option>
                                 <option value="Teknik Planologi">Teknik Planologi</option>
                             </select>
