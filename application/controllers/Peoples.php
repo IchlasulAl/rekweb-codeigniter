@@ -14,7 +14,7 @@ class Peoples extends CI_Controller
         //config
         $config['base_url'] = 'http://localhost/rekweb/rekweb-codeigniter/peoples/index';
         $config['total_rows'] = $this->peoples->countAllPeoples();
-        $config['per_page'] = 12;
+        $config['per_page'] = 8;
         $config['num_link']=3;
 
         //style
