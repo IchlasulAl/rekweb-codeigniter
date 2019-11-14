@@ -25,7 +25,7 @@
                         <th>#</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Action</th>
+                        <th>Actioon</th>
                     </tr>
                 </thead>
                 <tbody>
